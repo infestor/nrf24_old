@@ -1,4 +1,3 @@
-//#define __AVR_ATmega328__ 1
 #include <stdio.h>
 #include <avr/io.h>
 #include <string.h>
@@ -16,8 +15,7 @@ const uint8_t pinMap[][2] = {{3,3}, {3,4}, {9,9}, {9,9}, {9,9}, {9,9}, {1,6}, {1
                              {3,6}, {3,7}, {1,0}, {1,1}, {1,2}, {1,3}, {1,4}, {1,5}, {9,9}, \
 							               {9,9}, {9,9}, {9,9}, {9,9}, {2,0}, {2,1}, {2,2}, {2,3}, {2,4}, \
 							               {2,5}, {2,6}, {3,0}, {3,1}, {3,2} };
-                             
-                            
+
 uint8_t volatile maska;
 uint8_t volatile *p;
 uint8_t *pinDef0, *pinDef1;

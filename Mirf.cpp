@@ -270,6 +270,9 @@ void Nrf24l::init()
 	DDRB |= 0b00000110;
 	ceLow();
 	csnHi();
+	packetCounter = 0;
+	channel = DEFAULT_RF_CHANNEL;
+	devAddr = 0;
 
 	// Initialize spi module
 	spi->begin();

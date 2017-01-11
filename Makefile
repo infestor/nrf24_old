@@ -10,9 +10,9 @@ TARGET = nrf_comm.elf
 TARGET_MASTER = nrf_comm_master.elf
 
 OUTDIR=bin
-CESTA=/usr/local/CrossPack-AVR/bin/
+#CESTA=/usr/local/CrossPack-AVR/bin/
 #CESTA="C:/WinAVR-20100110\\bin\\"
-#CESTA =
+CESTA =
 
 CC = $(CESTA)avr-c++
 CPP = $(CESTA)avr-c++
